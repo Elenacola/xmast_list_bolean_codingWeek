@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xmas List | Coding Week</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <h1>Xmas List</h1>
+      </div>
+      <div class="header-bottom">
+        Spesa Totale: <span class="total-slot">0.00€</span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Lista -->
+      <ul class="gifts-list">
+        <!-- 
+        <li class="gift">
+          <div class="gift-info">
+            <h3>Sara</h3>
+            <p>Biglietti per il cinema</p>
+          </div>
+          <strong class="gift-price">16.00€</strong>
+          <button class="gift-button">❌</button>
+        </li>
+         -->
+      </ul>
+
+      <!-- Form -->
+      <form id="gift-form">
+        <div class="form-fields">
+          <input type="text" placeholder="Nome" id="name-field" autofocus required>
+          <input type="number" min="0.01" step="0.01" max="100" placeholder="Prezzo" id="price-field" required>
+          <input type="text" placeholder="Regalo" id="description-field" maxlength="30" required>
+        </div>
+        <button class="form-button">+</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

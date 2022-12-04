@@ -1,0 +1,144 @@
+/** COLOR PALETTE & FONT 
+* blue: #3535ec;
+* blue-dark: #120945;
+* gray: #d4d7f5;
+* green: #306753;
+* pink: #de7eb6;
+* yellow: #f2ad41;;
+* font: Livvic, sans-serif;
+*/
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Regole Generiche */
+
+html {
+  background-color: #d4d7f5;
+  font-family: Livvic, sans-serif;
+}
+
+h1 {
+  color: #f2ad41;
+  padding: 16px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.header-top {
+  height: 130px;
+  background-color: #120945;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url(images/lights.png);
+}
+
+.header-bottom {
+  height: 50px;
+  background-color: #3535ec;
+  border-radius: 0 0 15px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.total-slot {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* Main */
+
+main {
+  padding: 8px;
+}
+
+/* Lista regali */
+
+.gift {
+  border: 4px solid white;
+  border-radius: 8px;
+
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.gift-info {
+  width: 70%;
+  padding: 8px;
+}
+
+.gift-price {
+  width: 20%;
+  padding: 8px;
+}
+
+.gift-button {
+  width: 10%;
+  border: none;
+  background-color: white;
+  padding-left: 4px;
+}
+
+/* Form */
+form {
+  background-color: #de7eb6;
+  border-radius: 8px;
+  display: flex;
+}
+
+.form-fields {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#name-field {
+  width: calc(70% - 8px);
+}
+
+#price-field {
+  width: 30%;
+}
+
+.form-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  padding-right: 8px;
+}
